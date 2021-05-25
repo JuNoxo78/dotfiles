@@ -66,6 +66,7 @@ alias apar='sudo apt autoremove'
 alias api='sudo apt install'
 alias ape='sudo apt upgrade'
 alias aple='apt list --upgradable'
+alias su='sudo su'
 
 eval "$(starship init zsh)"
 
