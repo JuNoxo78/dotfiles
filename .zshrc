@@ -1,8 +1,12 @@
+export ZSH="/home/juan/.oh-my-zsh"
+
+plugins=(git vi-mode colored-man-pages)
+
+source $ZSH/oh-my-zsh.sh
+
 # Plugins
 source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source /usr/share/zsh-autosuggestions/zsh-autosuggestions.zsh
-source /home/juan/.oh-my-zsh/plugins/git/git.plugin.zsh
-source /home/juan/.oh-my-zsh/plugins/vi-mode/vi-mode.plugin.zsh
 
 # Set up the prompt
 
