@@ -2,4 +2,4 @@
 !.gitignore
 !.zshrc
 !README.md
-!starship.toml
+!.config
