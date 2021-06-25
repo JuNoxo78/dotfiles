@@ -1,0 +1,8 @@
+/*
+!.gitignore
+!alacritty/
+!htop/
+!starship.toml
+!neofetch/
+!nvim/
+!ranger/
