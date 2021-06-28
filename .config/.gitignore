@@ -1,3 +1,4 @@
+*.pyc
 /*
 !.gitignore
 !alacritty/
@@ -6,3 +7,4 @@
 !neofetch/
 !nvim/
 !ranger/
+!qtile/
