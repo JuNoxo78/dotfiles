@@ -3,7 +3,7 @@
 # Composer
 picom &
 # Wallpaper
-feh --bg-scale /home/juan/MEGA/Wallpapers/03.jpg
+feh --bg-scale /home/juan/MEGA/Wallpapers/07.jpg
 # Network
 nm-applet &
 # Automount Devices
