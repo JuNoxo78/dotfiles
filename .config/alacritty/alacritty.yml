@@ -49,7 +49,7 @@ font:
   offset:
     x: 0
     y: 0
-  size: 8.5
+  size: 10.0
   use_thin_strokes: false
 live_config_reload: true
 mouse:

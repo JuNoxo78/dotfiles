@@ -14,4 +14,8 @@
 !sxhkd/
 !bspwm/
 !kitty/
-!polybar/
+!polybar/hack/config.ini
+!polybar/hack/modules.ini
+!polybar/hack/user_modules.ini
+!polybar/hack/bars.ini
+!polybar/hack/preview.ini

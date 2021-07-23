@@ -65,3 +65,9 @@ eval "$(starship init zsh)"
 if [ $TILIX_ID ] || [ $VTE_VERSION ]; then
         source /etc/profile.d/vte.sh
 fi
+
+# EDITOR
+export EDITOR='nvim'
+
+# COLORSCRIPT
+colorscript random

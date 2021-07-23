@@ -14,3 +14,5 @@ cbatticon -u 5 &
 volumeicon &
 # Mega
 megasync &
+# Bluettoh
+blueman-applet &
