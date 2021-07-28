@@ -1,9 +1,14 @@
 #!/bin/sh
 
+# Authentication of ntfs
+/usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
 # Composer
 picom &
 # Wallpaper
-feh --bg-scale /home/juan/MEGA/Wallpapers/07.jpg
+feh --bg-scale /home/juan/MEGA/Wallpapers/wallpapers/0031.jpg
+# Overlay Bar
+xob-pulse-py | xob -s pulse &
+xob-brightness-js | xob -s brightness &
 # Network
 nm-applet &
 # Automount Devices
@@ -16,3 +21,5 @@ volumeicon &
 megasync &
 # Bluettoh
 blueman-applet &
+# Mail Client
+mailspring --background &

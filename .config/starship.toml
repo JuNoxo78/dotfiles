@@ -1,6 +1,7 @@
 # PROMPT
    # No imprimir una línea al comienzo de la shell
    add_newline = false
+   command_timeout = 10000
     
    # Hacer que la shell solo tenga una linea
    [line_break]
@@ -15,7 +16,7 @@
    error_symbol = "[➜](bold red)"
 
    [directory]
-   truncation_length = 4
+   truncation_length = 3
    format = "[$path]($style)[$lock_symbol]($lock_style) "
 
    [cmd_duration]
