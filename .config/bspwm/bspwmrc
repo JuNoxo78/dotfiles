@@ -2,8 +2,6 @@
 
 pgrep -x sxhkd > /dev/null || sxhkd &
 picom --experimental-backends &
-# Polybar
-~/.config/polybar/launch.sh --hack &
 
 # Wallpaper
 feh --bg-scale /home/juan/MEGA/Wallpapers/32.jpg
