@@ -2,9 +2,10 @@
 
 pgrep -x sxhkd > /dev/null || sxhkd &
 picom --experimental-backends &
+/home/juan/.config/polybar/cuts/launch.sh &
 
 # Wallpaper
-feh --bg-scale /home/juan/MEGA/Wallpapers/32.jpg
+feh --bg-scale /home/juan/MEGA/Jgi8Xl.jpg
 
 bspc monitor -d I II III IV V VI VII VIII IX
 
@@ -26,7 +27,14 @@ bspc rule -a Screenkey manage=off
 ## User
 #--------------------
 
+# Overlay Bar
+xob-pulse-py | xob -s pulse &
+xob-brightness-js | xob -s brightness &
 # Automount Devices
 udiskie -t &
 # systray battery icon
 cbatticon -u 5 &
+# Mega
+megasync &
+# Network
+nm-applet &
