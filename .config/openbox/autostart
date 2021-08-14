@@ -1,19 +1,16 @@
-#!/bin/sh
+tint2 &
 
 # Wallpaper
-feh --bg-scale /home/juan/MEGA/Wallpapers/wallpapers/0031.jpg
+feh --bg-scale /home/juan/MEGA/Jgi8Xl.jpg
+
 # Overlay Bar
 xob-pulse-py | xob -s pulse &
 xob-brightness-js | xob -s brightness &
-# Network
-nm-applet &
 # Automount Devices
 udiskie -t &
 # systray battery icon
 cbatticon -u 5 &
-# systray volume
-volumeicon &
-# Mega
-megasync &
+# Network
+nm-applet &
 # Bluettoh
 blueman-applet &

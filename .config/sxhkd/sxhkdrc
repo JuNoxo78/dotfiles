@@ -129,11 +129,11 @@ alt + super + {h,j,k,l}
 
 # Open google-chrome
 super + n
-	/usr/sbin/google-chrome-stable	
+	google-chrome-stable	
 
 # Open file explorer
 super + e
-	pcmanfm
+	thunar
 
 # Volume
 XF86AudioLowerVolume
