@@ -68,6 +68,3 @@ fi
 
 # EDITOR
 export EDITOR='nvim'
-
-# COLORSCRIPT
-colorscript random

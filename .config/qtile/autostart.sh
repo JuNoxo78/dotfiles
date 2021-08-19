@@ -1,10 +1,7 @@
 #!/bin/sh
 
 # Wallpaper
-feh --bg-scale /home/juan/MEGA/Wallpapers/wallpapers/0031.jpg
-# Overlay Bar
-xob-pulse-py | xob -s pulse &
-xob-brightness-js | xob -s brightness &
+feh --bg-scale /home/juan/MEGA/Wallpapers/wallpapers/0290.jpg
 # Network
 nm-applet &
 # Automount Devices

@@ -2,8 +2,6 @@
 
 # Spectrwm autostart script
 
-xob-pulse-py | xob -s pulse &
-xob-brightness-js | xob -s brightness &
 # Wallpaper
 feh --bg-scale /home/juan/MEGA/Wallpapers/wallpapers/0019.jpg
 # Automount Devices
