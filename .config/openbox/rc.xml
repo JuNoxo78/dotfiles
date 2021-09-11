@@ -306,7 +306,7 @@
     </keybind>
     <!-- Keybindings for running applications -->
     <!-- Menu  -->
-    <keybind key="W-m">
+    <keybind key="W-d">
       <action name="Execute">
         <startupnotify>
           <enabled>true</enabled>
@@ -315,7 +315,7 @@
         <command>rofi -show drun</command>
       </action>
     </keybind>
-    <keybind key="W-S-m">
+    <keybind key="W-S-d">
       <action name="Execute">
         <startupnotify>
           <enabled>true</enabled>
@@ -325,13 +325,13 @@
       </action>
     </keybind>
     <!-- Browser -->
-    <keybind key="W-b">
+    <keybind key="W-n">
       <action name="Execute">
         <startupnotify>
           <enabled>true</enabled>
           <name>Browser</name>
         </startupnotify>
-        <command>firefox</command>
+        <command>google-chrome-stable</command>
       </action>
     </keybind>
     <!-- File Explorer -->
@@ -344,25 +344,25 @@
         <command>pcmanfm</command>
       </action>
     </keybind>
-    <!-- Redshift -->
-    <keybind key="W-r">
-      <action name="Execute">
-        <startupnotify>
-          <enabled>true</enabled>
-          <name>Redshift</name>
-        </startupnotify>
-        <command>redshift -O 2400</command>
-      </action>
-    </keybind>
-    <keybind key="W-S-r">
-      <action name="Execute">
-        <startupnotify>
-          <enabled>true</enabled>
-          <name>Redshift Off</name>
-        </startupnotify>
-        <command>redshift -x</command>
-      </action>
-    </keybind>
+    <!-- <!-1- Redshift -1-> -->
+    <!-- <keybind key="W-r"> -->
+    <!--   <action name="Execute"> -->
+    <!--     <startupnotify> -->
+    <!--       <enabled>true</enabled> -->
+    <!--       <name>Redshift</name> -->
+    <!--     </startupnotify> -->
+    <!--     <command>redshift -O 2400</command> -->
+    <!--   </action> -->
+    <!-- </keybind> -->
+    <!-- <keybind key="W-S-r"> -->
+    <!--   <action name="Execute"> -->
+    <!--     <startupnotify> -->
+    <!--       <enabled>true</enabled> -->
+    <!--       <name>Redshift Off</name> -->
+    <!--     </startupnotify> -->
+    <!--     <command>redshift -x</command> -->
+    <!--   </action> -->
+    <!-- </keybind> -->
     <!-- Terminal  -->
     <keybind key="W-Return">
       <action name="Execute">
@@ -439,7 +439,7 @@
         <command>brightnessctl set 10%-</command>
       </action>
     </keybind>
-    <keybind key="W-C-r">
+    <keybind key="W-S-r">
       <action name="Execute">
         <startupnotify>
           <enabled>true</enabled>
@@ -448,7 +448,7 @@
         <command>openbox --restart</command>
       </action>
     </keybind>
-    <keybind key="W-C-q">
+    <keybind key="W-S-q">
       <action name="Execute">
         <startupnotify>
           <enabled>true</enabled>

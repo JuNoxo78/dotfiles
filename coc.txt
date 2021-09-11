@@ -5,3 +5,4 @@ extensiones:
 . coc-pyright
 . coc-json
 . coc-css
+. coc-emmet

@@ -47,7 +47,7 @@ zstyle ':completion:*:kill:*' command 'ps -u $USER -o pid,%cpu,tty,cputime,cmd'
 
 # PATH
 
-PATH=/home/juan/.cargo/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/juan/.local/bin:/home/juan/.local/share/gem/ruby/3.0.0/bin
+PATH=/home/juan/.cargo/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/juan/.local/bin:/home/juan/.local/share/gem/ruby/3.0.0/bin:/home/juan/.emacs.d/bin
 
 # Manual aliases
 alias ll='exa -lh --group-directories-first'
@@ -55,8 +55,8 @@ alias la='exa -a --group-directories-first'
 alias l='exa --group-directories-first'
 alias lla='exa -lha --group-directories-first'
 alias ls='exa --group-directories-first'
-alias cat='bat --theme gruvbox-dark'
-alias catn='ccat -G Plaintext="blink" -G Keyword="purple" -G String="darkgreen"'
+alias cat='ccat -G Plaintext="blink" -G Keyword="purple" -G String="darkgreen"'
+alias catn='bat --theme gruvbox-dark'
 alias v='nvim'
 alias tree='exa -T'
 

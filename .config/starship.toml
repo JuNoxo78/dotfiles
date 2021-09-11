@@ -1,6 +1,8 @@
 # PROMPT
    # No imprimir una línea al comienzo de la shell
    add_newline = false
+
+   # Esperar a que aparezcan los íconos de cualquier cosa
    command_timeout = 10000
     
    # Hacer que la shell solo tenga una linea

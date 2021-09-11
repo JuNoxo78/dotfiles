@@ -19,7 +19,7 @@ bspc config focus_follows_pointer false
 
 bspc rule -a Gimp desktop='^8' state=floating follow=on
 bspc rule -a MEGAsync state=floating follow=on
-bspc rule -a Thunar state=floating follow=on
+# bspc rule -a Thunar state=floating follow=on
 bspc rule -a Chromium desktop='^2'
 bspc rule -a mplayer2 state=floating
 bspc rule -a Kupfer.py focus=on
@@ -30,12 +30,16 @@ bspc rule -a Screenkey manage=off
 #--------------------
 
 # Automount Devices
+killall udiskie
 udiskie -t &
 # systray battery icon
+killall cbatticon
 cbatticon -u 5 &
 # Mega
 megasync &
 # Network
+killall nm-applet
 nm-applet &
 # Bluettoh
+killall blueman-applet
 blueman-applet &
