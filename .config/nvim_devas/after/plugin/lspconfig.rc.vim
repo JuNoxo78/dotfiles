@@ -8,6 +8,9 @@ EOF
 
 lua << EOF
 local nvim_lsp = require('lspconfig')
+--Enable (broadcasting) snippet capability for completion
+local capabilities = vim.lsp.protocol.make_client_capabilities()
+capabilities.textDocument.completion.completionItem.snippetSupport = true
 local protocol = require'vim.lsp.protocol'
 
 -- Use an on_attach function to only map the following keys 
@@ -38,7 +41,7 @@ local on_attach = function(client, bufnr)
   buf_set_keymap('n', '<space>e', '<cmd>lua vim.lsp.diagnostic.show_line_diagnostics()<CR>', opts)
   --buf_set_keymap('n', '<C-j>', '<cmd>lua vim.lsp.diagnostic.goto_prev()<CR>', opts)
   buf_set_keymap('n', '<S-C-j>', '<cmd>lua vim.lsp.diagnostic.goto_next()<CR>', opts)
---  buf_set_keymap('n', '<space>q', '<cmd>lua vim.lsp.diagnostic.set_loclist()<CR>', opts)
+  --buf_set_keymap('n', '<space>q', '<cmd>lua vim.lsp.diagnostic.set_loclist()<CR>', opts)
   buf_set_keymap("n", "<space>f", "<cmd>lua vim.lsp.buf.formatting()<CR>", opts)
 
   -- formatting
@@ -85,6 +88,39 @@ nvim_lsp.flow.setup {
   on_attach = on_attach
 }
 
+nvim_lsp.html.setup{
+  capabilities = capabilities,
+  on_attach = on_attach,
+  cmd = { "vscode-html-language-server", "--stdio" },
+  filetypes = { "html" },
+  init_options = {
+    configurationSection = { "html", "css", "javascript" },
+    embeddedLanguages = {
+      css = true,
+      javascript = true
+    }
+  },
+  settings = {}
+}
+
+nvim_lsp.cssls.setup {  
+  capabilities = capabilities,
+  on_attach = on_attach,
+  cmd = { "css-languageserver", "--stdio" },
+  filetypes = { "css", "scss", "less" },
+  settings = {
+    css = {
+    validate = true
+    },
+    less = {
+    validate = true
+    },
+    scss = {
+    validate = true
+    }
+  }
+}
+
 nvim_lsp.tsserver.setup {
   on_attach = on_attach,
   filetypes = { "typescript", "typescriptreact", "typescript.tsx", "javascript" }
@@ -94,7 +130,7 @@ nvim_lsp.pyright.setup{ on_attach=on_attach }
 
 nvim_lsp.diagnosticls.setup {
   on_attach = on_attach,
-  filetypes = { 'javascript', 'javascriptreact', 'json', 'typescript', 'typescriptreact', 'css', 'less', 'scss', 'markdown', 'pandoc' },
+  filetypes = { 'javascript', 'javascriptreact', 'json', 'typescript', 'typescriptreact', 'css', 'less', 'scss', 'markdown', 'pandoc', 'html' },
   init_options = {
     linters = {
       eslint = {
@@ -146,6 +182,7 @@ nvim_lsp.diagnosticls.setup {
       typescriptreact = 'eslint_d',
       json = 'prettier',
       markdown = 'prettier',
+      html = 'prettier'
     }
   }
 }

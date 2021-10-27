@@ -16,7 +16,7 @@ if has("nvim")
   Plug 'glepnir/lspsaga.nvim'
   Plug 'folke/lsp-colors.nvim'
   Plug 'nvim-lua/completion-nvim'
-  Plug 'nvim-treesitter/nvim-treesitter', { 'do': ':TSUpdate' }
+  Plug 'sheerun/vim-polyglot'
   Plug 'kyazdani42/nvim-web-devicons'
   Plug 'nvim-lua/popup.nvim'
   Plug 'nvim-lua/plenary.nvim'
@@ -36,6 +36,9 @@ Plug 'tpope/vim-commentary'
 Plug 'Yggdroot/indentLine' 
 Plug 'mhinz/vim-signify'
 Plug 'mattn/emmet-vim'
+Plug 'SirVer/ultisnips'
+" Plug 'neoclide/coc.nvim', {'branch': 'release', 'for': ['html', 'sh']}
+Plug 'ervandew/supertab'
 
 call plug#end()
 

@@ -68,3 +68,5 @@ fi
 
 # EDITOR
 export EDITOR='nvim'
+
+neofetch
