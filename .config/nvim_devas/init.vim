@@ -26,7 +26,7 @@ set scrolloff=10
 set expandtab
 "let loaded_matchparen = 1
 set shell=zsh
-" set backupskip=/tmp/*,/private/tmp/*
+set backupskip=/tmp/*,/private/tmp/*
 set clipboard=unnamedplus
 set mouse=a
 
@@ -141,13 +141,14 @@ endif
 " Extras "{{{
 " ---------------------------------------------------------------------
 set exrc
-"}}}
 
-" vim: set foldmethod=marker foldlevel=0:
-"
 " Configuration for Plugins without rc.vim
 " 
 " Emmet-vim
 let g:user_emmet_leader_key=','
 let g:user_emmet_install_global = 0
 autocmd FileType html,css EmmetInstall
+
+"}}}
+
+" vim: set foldmethod=marker foldlevel=0:

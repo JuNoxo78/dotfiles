@@ -4,9 +4,6 @@ pgrep -x sxhkd > /dev/null || sxhkd &
 /home/juan/.config/polybar/blocks/launch.sh &
 wmname LG3D &
 
-# Wallpaper
-feh --bg-scale /home/juan/MEGA/Wallpapers/wallpapers/0290.jpg
-
 bspc monitor -d I II III IV V VI VII VIII IX
 
 bspc config border_width         2

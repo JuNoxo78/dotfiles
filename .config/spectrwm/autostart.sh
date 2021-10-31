@@ -2,8 +2,6 @@
 
 # Spectrwm autostart script
 
-# Wallpaper
-feh --bg-scale /home/juan/MEGA/Wallpapers/wallpapers/0019.jpg
 # Automount Devices
 udiskie -t &
 # trayer                 \

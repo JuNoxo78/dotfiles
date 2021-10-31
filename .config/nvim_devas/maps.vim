@@ -61,7 +61,7 @@ nmap <C-w><right> <C-w>>
 nmap <C-w><up> <C-w>+
 nmap <C-w><down> <C-w>-
 
-set splitright
+set splitbelow
 function! OpenTerminal()
   " move to right most buffer
   execute "normal \<C-l>"
@@ -77,7 +77,8 @@ function! OpenTerminal()
     execute "q"
   else
     " open terminal
-    execute "vsp term://zsh"
+    execute "split term://zsh"
+    execute "resize 10"
 
     " turn off numbers
     execute "set nonu"

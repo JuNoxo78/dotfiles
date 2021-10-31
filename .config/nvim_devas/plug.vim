@@ -37,7 +37,7 @@ Plug 'Yggdroot/indentLine'
 Plug 'mhinz/vim-signify'
 Plug 'mattn/emmet-vim'
 Plug 'SirVer/ultisnips'
-" Plug 'neoclide/coc.nvim', {'branch': 'release', 'for': ['html', 'sh']}
+Plug 'neoclide/coc.nvim', {'branch': 'release', 'for': ['sh', 'vim', 'zsh', 'gitconfig', 'gitignore', 'text', 'cpp']}
 Plug 'ervandew/supertab'
 
 call plug#end()

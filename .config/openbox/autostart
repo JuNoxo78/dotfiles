@@ -1,8 +1,5 @@
 tint2 &
 
-# Wallpaper
-feh --bg-scale /home/juan/MEGA/Jgi8Xl.jpg
-
 # Automount Devices
 udiskie -t &
 # systray battery icon
