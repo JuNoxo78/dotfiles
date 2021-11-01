@@ -77,7 +77,7 @@ function! OpenTerminal()
     execute "q"
   else
     " open terminal
-    execute "split term://zsh"
+    execute "botright split term://zsh"
     execute "resize 10"
 
     " turn off numbers
