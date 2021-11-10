@@ -9,8 +9,8 @@ Plug 'tpope/vim-rhubarb'
 
 if has("nvim")
   Plug 'hoob3rt/lualine.nvim'
-  Plug 'kristijanhusak/defx-git'
-  Plug 'kristijanhusak/defx-icons'
+  " Plug 'kristijanhusak/defx-git'
+  " Plug 'kristijanhusak/defx-icons'
   Plug 'Shougo/defx.nvim', { 'do': ':UpdateRemotePlugins' }
   Plug 'neovim/nvim-lspconfig'
   Plug 'glepnir/lspsaga.nvim'
@@ -39,6 +39,8 @@ Plug 'mattn/emmet-vim'
 Plug 'SirVer/ultisnips'
 Plug 'neoclide/coc.nvim', {'branch': 'release', 'for': ['sh', 'vim', 'zsh', 'gitconfig', 'gitignore', 'text', 'cpp']}
 Plug 'ervandew/supertab'
+Plug 'kevinhwang91/rnvimr'
+Plug 'tpope/vim-surround'
 
 call plug#end()
 
