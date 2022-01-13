@@ -55,6 +55,11 @@ map sh <C-w>h
 map sk <C-w>k
 map sj <C-w>j
 map sl <C-w>l
+function! Botright()
+  execute "botright split"
+  execute "resize 14"
+endfunction
+map sb :call Botright()<CR>
 " Resize window
 nmap <C-w><left> <C-w><
 nmap <C-w><right> <C-w>>
@@ -62,7 +67,7 @@ nmap <C-w><up> <C-w>+
 nmap <C-w><down> <C-w>-
 
 set splitbelow
-function! OpenTerminal()
+function! OpenTerminal() 
   " move to right most buffer
   execute "normal \<C-l>"
   execute "normal \<C-l>"

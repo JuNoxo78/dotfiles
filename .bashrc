@@ -18,3 +18,4 @@ alias cat='bat --theme gruvbox-dark'
 alias catn='ccat -G Plaintext="blink" -G Keyword="purple" -G String="darkgreen"'
 alias v='nvim'
 alias tree='exa -T'
+. "$HOME/.cargo/env"
