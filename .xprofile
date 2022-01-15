@@ -1,14 +1,3 @@
 # Env Vars
-QT_QPA_PLATFORMTHEME=qt5ct
 export PATH=$HOME/.local/bin:$PATH
-
-# Keyboard Layout
-setxkbmap -option grp:alt_shift_toggle latam,dvorak &
-
-# Composer
-picom &
-# Authentication of ntfs
-/usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
-# Overlay Bar
-xob-pulse-py | xob -s pulse &
-xob-brightness-js | xob -s brightness &
+export PATH=$PATH:/usr/local/go/bin
