@@ -1,12 +1,12 @@
-export ZSH="/home/juan/.oh-my-zsh"
+export ZSH="/home/julz/.oh-my-zsh"
 
-plugins=(git archlinux vi-mode colored-man-pages)
+plugins=(git ubuntu vi-mode colored-man-pages)
 
 source $ZSH/oh-my-zsh.sh
 
 # Plugins
-source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh 
-source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
+source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source /usr/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 
 # Set up the prompt
 
@@ -47,7 +47,7 @@ zstyle ':completion:*:kill:*' command 'ps -u $USER -o pid,%cpu,tty,cputime,cmd'
 
 # PATH
 
-PATH=/home/juan/.cargo/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/juan/.local/bin:/home/juan/.local/share/gem/ruby/3.0.0/bin:/home/juan/.emacs.d/bin
+PATH=/home/julz/.cargo/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/julz/.local/bin
 
 # Manual aliases
 alias ll='exa -lh --group-directories-first'

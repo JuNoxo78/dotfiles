@@ -25,3 +25,4 @@ source $HOME/.config/nvim/plug-config/bartag.vim
 source $HOME/.config/nvim/plug-config/hexokinase.vim
 source $HOME/.config/nvim/plug-config/fzf-git.vim
 source $HOME/.config/nvim/plug-config/ultisnips.vim
+source $HOME/.config/nvim/plug-config/zeavim.vim
