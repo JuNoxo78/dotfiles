@@ -3,26 +3,26 @@ bell:
   duration: 0
 colors:
   bright:
-    black: '#6b7089'
-    blue: '#91acd1'
-    cyan: '#95c4ce'
-    green: '#c0ca8e'
-    magenta: '#ada0d3'
-    red: '#e98989'
-    white: '#d2d4de'
-    yellow: '#e9b189'
+    black: '0x434c5e'
+    blue: '0x81a1c1'
+    cyan: '0x88c0d0'
+    green: '0xa3be8c'
+    magenta: '0xb48ead'
+    red: '0xbf616a'
+    white: '0xe5e9f0'
+    yellow: '0xebcb8b'
   normal:
-    black: '#161821'
-    blue: '#84a0c6'
-    cyan: '#89b8c2'
-    green: '#b4be82'
-    magenta: '#a093c7'
-    red: '#e27878'
-    white: '#c6c8d1'
-    yellow: '#e2a478'
+    black: '0x3b4252'
+    blue: '0x81a1c1'
+    cyan: '0x88c0d0'
+    green: '0xa3be8c'
+    magenta: '0xb48ead'
+    red: '0xbf616a'
+    white: '0xbfd5de'
+    yellow: '0xebcb8b'
   primary:
-    background: '#161821'
-    foreground: '#d2d4de'
+    background: '0x2e3440'
+    foreground: '0xd8dee9'
 cursor:
   style: Block
   unfocused_hollow: true
@@ -64,11 +64,11 @@ selection:
   semantic_escape_chars: ",\u2502`|:\"' ()[]{}<>"
 vi_mode_style: block
 window:
-  opacity: 0.9
   dimensions:
     columns: 120
     lines: 40
   dynamic_padding: false
+  opacity: 0.9
   padding:
     x: 2
     y: 0

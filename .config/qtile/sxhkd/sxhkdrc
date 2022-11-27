@@ -1,0 +1,257 @@
+#################################################################
+# KEYBOARD BINDINGS FOR ANY TWM
+#################################################################
+
+#################################################################
+# SUPER + FUNCTION KEYS
+#################################################################
+
+#Chrome
+super + F1
+	google-chrome-stable
+
+#VsCode
+super + F2
+	code
+
+#Kdenlive
+super + F3
+    kdenlive
+
+#Rhythmbox
+super + F4
+    rhythmbox
+
+#Thunar
+super + F5
+    thunar
+
+#################################################################
+# SUPER + ... KEYS
+#################################################################
+
+#VsCode
+super + e
+    code
+
+#Browser
+super + w
+    google-chrome-stable
+
+#archlinux-logout
+super + x
+    archlinux-logout
+
+#Urxvt
+super + t
+    urxvt
+
+#Pavucontrol
+super + v
+    pavucontrol
+
+#Rhytmbox
+super + m
+    rhythmbox
+
+#alacritty
+super + Return
+    alacritty
+
+#Xkill
+super + Escape
+    xkill
+
+#Keyboard dependent
+#alacritty
+super + KP_Enter
+	alacritty
+
+#################################################################
+# SUPER + SHIFT KEYS
+#################################################################
+
+#File-Manager
+super + shift + Return
+	thunar
+
+#Rofi
+super + d
+    rofi -show drun
+
+#dmenu
+super + shift + d
+	dmenu_run -i -nb '#191919' -nf '#fea63c' -sb '#fea63c' -sf '#191919' -fn 'NotoMonoRegular:bold:pixelsize=14'
+
+#reload sxhkd:
+super + shift + s
+	pkill -USR1 -x sxhkd
+
+
+#################################################################
+# CONTROL + ALT KEYS
+#################################################################
+
+#archlinux-tweak-tool
+ctrl + alt + e
+    archlinux-tweak-tool
+
+#File-Manager
+ctrl + alt + b
+     thunar
+
+#Catfish
+ctrl + alt + c
+     catfish
+
+#Chromium
+ctrl + alt + g
+    chromium -no-default-browser-check
+
+#Firefox
+ctrl + alt + f
+     firefox
+
+
+#archlinux-logout
+ctrl + alt + k
+     archlinux-logout
+
+#archlinux-logout
+ctrl + alt + l
+    archlinux-logout
+
+#Pamac-manager
+ctrl + alt + p
+    pamac-manager
+
+#Xfce4-settings-manager
+ctrl + alt + m
+     xfce4-settings-manager
+
+#Pulse Audio Control
+ctrl + alt + u
+     pavucontrol
+
+#Rofi theme selector
+ctrl + alt + r
+  rofi-theme-selector
+
+#Spotify
+ctrl + alt + s
+   spotify
+
+#alacritty
+ctrl + alt + Return
+    alacritty
+
+#alacritty
+ctrl + alt + t
+    alacritty
+
+#Vivaldi
+ctrl + alt + v
+    vivaldi-stable
+
+#Xfce4-appfinder
+ctrl + alt + a
+    xfce4-appfinder
+
+
+#Keyboard dependent
+#alacritty
+#ctrl + alt + KP_Enter
+#     alacritty
+
+
+#################################################################
+# ALT + ... KEYS
+#################################################################
+
+#Xfce4-appfinder
+alt + F2
+    xfce4-appfinder --collapsed
+
+#Xfce4-appfinder
+alt + F3
+    xfce4-appfinder
+
+#################################################################
+# CONTROL + SHIFT KEYS
+#################################################################
+
+#Xcfe4-TaskManager
+ctrl + shift + Escape
+    xfce4-taskmanager
+
+
+#################################################################
+#     SCREENSHOTS
+#################################################################
+
+#Scrot
+Print
+    scrot 'ArcoLinux-%Y-%m-%d-%s_screenshot_$wx$h.jpg' -e 'mv $f $$(xdg-user-dir PICTURES)'
+
+#Gnome-Screenshot
+ctrl + Print
+     gnome-screenshot -i
+
+
+#################################################################
+#     FUNCTION KEYS
+#################################################################
+
+#xfce4-terminal dropdown
+F12
+    xfce4-terminal --drop-down
+
+
+#################################################################
+#     MULTIMEDIA KEYS
+#################################################################
+
+#Raises volume
+XF86AudioRaiseVolume
+    amixer set Master 10%+
+
+#Lowers volume
+XF86AudioLowerVolume
+    amixer set Master 10%-
+
+#Mute
+XF86AudioMute
+    amixer -D pulse set Master 1+ toggle
+
+#Playerctl works for Pragha, Spotify and others
+#Delete the line for playerctl if you want to use mpc
+#and replace it with the corresponding code
+#mpc works for e.g.ncmpcpp
+#mpc toggle
+#mpc next
+#mpc prev
+#mpc stop
+
+#PLAY
+XF86AudioPlay
+    playerctl play-pause
+
+#Next
+XF86AudioNext
+    playerctl next
+
+#previous
+XF86AudioPrev
+    playerctl previous
+
+#Stop
+XF86AudioStop
+    playerctl stop
+
+#Brightness up
+XF86MonBrightnessUp
+    brightnessctl set +10%
+
+#Brightness down
+XF86MonBrightnessDown
+    brightnessctl set 10%-
