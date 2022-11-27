@@ -10,7 +10,4 @@ fonts:
     Iosevka: Iosevka NF
     Hack: Hack NF
     SpaceMono: SpaceMono NF
-    JetBrains:
-        normal: JetBrains Mono Medium Nerd Font
-        italic: JetBrains Mono Medium Nerd Font
-        bold: JetBrains Mono ExtraBold Nerd Font
+    JetBrains: JetBrains Mono Nerd Font
