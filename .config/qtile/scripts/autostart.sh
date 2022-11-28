@@ -9,10 +9,6 @@ function run {
 
 keybLayout=$(setxkbmap -v | awk -F "+" '/symbols/ {print $2}')
 
-if [ $keybLayout = "be" ]; then
-  cp $HOME/.config/qtile/config-azerty.py $HOME/.config/qtile/config.py
-fi
-
 #start sxhkd to replace Qtile native key-bindings
 run sxhkd -c ~/.config/qtile/sxhkd/sxhkdrc &
 
@@ -28,9 +24,6 @@ xob-pulse-py | xob -s pulse &
 xob-brightness-js | xob -s brightness &
 # Authentication of ntfs
 /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
-# Overlay Bar
-xob-pulse-py | xob -s pulse &
-xob-brightness-js | xob -s brightness &
 #Background
 feh --bg-scale /mnt/3741d66f-0376-481e-9d69-022851616c19/OneDrive/Wallpapers/wallpapers/0007.jpg
 # Network
@@ -45,3 +38,6 @@ run volumeicon &
 blueman-applet &
 # Client Mail
 run mailspring --background %U &
+# Overlay Bar
+xob-pulse-py | xob -s pulse &
+xob-brightness-js | xob -s brightness &
