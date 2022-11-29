@@ -15,13 +15,9 @@ run sxhkd -c ~/.config/qtile/sxhkd/sxhkdrc &
 # Arco Linux
 run pamac-tray &
 numlockx on &
-/usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
 /usr/lib/xfce4/notifyd/xfce4-notifyd &
 # Composer
 picom &
-# Overlay Bar
-xob-pulse-py | xob -s pulse &
-xob-brightness-js | xob -s brightness &
 # Authentication of ntfs
 /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
 #Background
@@ -31,13 +27,10 @@ run nm-applet &
 # Automount Devices
 udiskie -t &
 # systray battery icon
-run cbatticon -u 5 &
+run xfce4-power-manager &
 # systray volume
 run volumeicon &
 # Bluettoh
 blueman-applet &
 # Client Mail
 run mailspring --background %U &
-# Overlay Bar
-xob-pulse-py | xob -s pulse &
-xob-brightness-js | xob -s brightness &
